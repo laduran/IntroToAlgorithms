@@ -1,7 +1,5 @@
 import math
-
-# Notes: uses the floor division operator // 
-# detailed here: https://docs.python.org/3/whatsnew/2.2.html#pep-238-changing-the-division-operator
+# NOTE: detailed here: https://docs.python.org/3/whatsnew/2.2.html#pep-238-changing-the-division-operator
 
 def merge(A, left, right):
     '''
@@ -36,7 +34,7 @@ def merge_sort(A):
     merge the two lists
     '''
     if len(A) > 1:
-        mid = len(A) // 2
+        mid = len(A) // 2 # NOTE: uses the floor division operator // 
         left_half = A[:mid]
         right_half = A[mid:]
 
